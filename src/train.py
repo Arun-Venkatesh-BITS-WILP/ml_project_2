@@ -3,6 +3,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
+
 def train_model():
     # Load dataset
     data = load_iris()
@@ -19,5 +20,7 @@ def train_model():
         pickle.dump(model, f)
     print("Model trained and saved!")
 
+
 if __name__ == "__main__":
     train_model()
+
